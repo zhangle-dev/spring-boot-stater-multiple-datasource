@@ -63,6 +63,11 @@ public class MultiDatasourceConfiguration {
         return dynamicDataSource;
     }
 
+    @Bean
+    public MultipleDatasourceDaoProcessor multipleDatasourceDaoProcessor() {
+        return new MultipleDatasourceDaoProcessor();
+    }
+
     private DataSource getDataSource(Class<DataSource> poolClass, DataSourceProperties properties) {
         return properties.initializeDataSourceBuilder().type(poolClass).build();
     }

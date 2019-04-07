@@ -5,7 +5,7 @@
 
     <groupId>com.zl</groupId>
     <artifactId>spring-boot-stater-multiple-data-source</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>spring-boot-stater-multiple-data-source</name>
     <description>Demo project for Spring Boot</description>
 
@@ -51,6 +51,13 @@
             <artifactId>lombok</artifactId>
             <version>1.18.6</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
