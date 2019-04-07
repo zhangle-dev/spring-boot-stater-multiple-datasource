@@ -23,7 +23,7 @@ public class DataSourceAspect {
     /**
      * 使用空方法定义切点表达式
      */
-    @Pointcut("execution(* com..*.dao..*(..))")
+    @Pointcut("@annotation(com.zl.multiple.datasource.entity.SelectDatabase)")
     public void pointcut() {}
 
     @Before("pointcut()")

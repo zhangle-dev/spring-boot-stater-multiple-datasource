@@ -24,7 +24,7 @@ import java.util.Map;
 @Configuration
 @EnableConfigurationProperties(MultiDatasourceProperties.class)
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)
-@ComponentScan("com.zl.springbootstatermultipledatasource")
+@ComponentScan("com.zl.multiple.datasource")
 public class MultiDatasourceConfiguration {
 
     public static final int INITIAL_CAPACITY = 10;
