@@ -39,7 +39,7 @@ spring.datasource.multi.db2.driver-class-name=com.mysql.jdbc.Driver
 
 ```
 
-4、在需要指定数据源的方法上添加@SelectDatabase，用来指定数据源，比如想用上面定一的db1数据源，则添加SelectDatabase("db1")注解即可(只支持类路径中带有dao的包下的类，如com.zl.dao.Test,com.zl.hello.dao.Test,com.zl.dao.hello.Test等)，支持在mybatis的接口上添加
+4、在需要指定数据源的方法上添加@SelectDatabase，用来指定数据源，比如想用上面定一的db1数据源，则添加SelectDatabase("db1")注解即可，支持在mybatis的接口上添加
 ```java
 @Repository
 public class DaoTest {
